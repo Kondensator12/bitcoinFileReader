@@ -1,0 +1,3 @@
+add_subdirectory(binFileReader)
+add_subdirectory(decrypter)
+add_subdirectory(bitcoinBinToText)

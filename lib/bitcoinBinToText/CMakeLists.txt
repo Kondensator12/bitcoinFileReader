@@ -1,0 +1,6 @@
+set(LIBRARY_NAME "bitcoinBinToText")
+set(LIBRARY_INCLUDES "${CMAKE_BINARY_DIR}/app/" )
+add_library(${LIBRARY_NAME} ${LIBRARY_NAME}.cpp ${LIBRARY_NAME}.h)
+target_include_directories("bitcoinBinToText"  PUBLIC ${LIBRARY_INCLUDES} .)
+add_subdirectory(bitcoinBlockContainer)
+target_link_libraries(bitcoinBinToText PUBLIC bitcoinBlockContainer)
